@@ -34,7 +34,7 @@ app.set("view engine", "handlebars");
 var routes = require("./controllers/headline.js");
 app.use("/", routes);
 
-mongoose.connect("mongodb://heroku_gnzk5747:4d2121nhgnfbdl1pfirsdepk9n@ds125262.mlab.com:25262/heroku_gnzk5747");
+mongoose.connect("mongodb://<dbuser>:<dbpassword>@ds153392.mlab.com:53392/scrap");
 
 
 var db = mongoose.connection;
